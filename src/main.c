@@ -6,7 +6,7 @@
 int compare_students(const void* a, const void* b) {
     STUDENT* student_a = *(STUDENT**)a;
     STUDENT* student_b = *(STUDENT**)b;
-    
+
     return strcmp(get_student_name(student_a), get_student_name(student_b));
 }
 
@@ -14,9 +14,9 @@ const int SES_SIZE = 5;
 
 int main() {
 	int n = 10;
-    
+
 	STUDENT** students = (STUDENT**)malloc(n * sizeof(STUDENT*));
-    
+
 	for (int i = 0; i < n; i++) {
 		students[i] = create_student();
 		input_student_data(students[i], i + 1, SES_SIZE);

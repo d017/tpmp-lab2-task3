@@ -76,7 +76,7 @@ void input_student_data(STUDENT* student, int student_number, int session_size) 
     set_student_course(student, course);
     
     student->ses = (int*)malloc(session_size * sizeof(int));
-    
+
     printf("\nEnter session results (%d marks):\n", session_size);
     for (int j = 0; j < session_size; j++) {
         int mark;
