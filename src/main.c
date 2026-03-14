@@ -36,7 +36,7 @@ int main() {
 		for (int j = 0; j < SES_SIZE; j++)
 			total_mark += get_student_mark(students[i], j);
 	
-	double avg = total_mark / ((double) (n * SES_SIZE))
+	double avg = total_mark / ((double) (n * SES_SIZE));
 	int above_avg = 0;
 	for (int i = 0; i < n; i++) {
 		double stud_avg = 0.;
